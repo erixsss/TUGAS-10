@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bermain Struktur Data Object TODOLIST Lanjutan</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="tampilkanJam()" class="background">
+    <div class="container">
+        <h1 class="marginH1">TODO LIST</h1>
+    </div>
+    <div class="container">
+        <h1 id="jam"></h1>
+    </div>
+
+    <div class="container">
+        <input id="input" placeholder="Tulis Rencanamu..." type="text">
+        <span id="button-kirim" onclick="kirim()" type="button" class="addBtn btn btn-warning">add</span>
+        <span id="button-reset" onclick="resett()" type="button" class="addBtn btn btn-danger">reset</span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h5 id="sisaTodo"></h5>
+    </div>
+
+
+    <div class="container">
+        <ul id="listUL" class="list-group list-group-flush no-line">
+
+        </ul>
+    </div>
+
+    <script src="my.js"></script>
+
+
+</body>
+
+</html>

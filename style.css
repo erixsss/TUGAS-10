@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  /* height: 100%; */
+}
+
+.background {
+  background-image: url("image/background.jpg");
+  background-color: #fff;
+  background-repeat: repeat-y;
+  background-size: cover;
+  color: #fff;
+  /* text-align: center; */
+}
+
+.transparan {
+  background-color: transparent;
+  border-color: #fff;
+}
+#jam {
+  text-align: center;
+}
+#input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 10rem;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 4rem;
+  /* background: #d9d9d9; */
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  margin: 0 0.3rem;
+}
+
+.marginH1 {
+  margin-top: 3.5rem;
+  /* margin-bottom: 3.5rem; */
+  text-align: center;
+}
+
+.btn-close {
+  width: 5%;
+  float: right;
+  text-align: center;
+  color: black;
+}
+.no-line {
+  text-decoration-style: solid;
+}
+.warnaBackgroundList {
+  background-color: rgb(245, 232, 158);
+}
+
+/* input[type="checkbox"][checked]{text-decoration:line-through}; */
+
+/* ul li:nth-child(odd) {
+  background: #f9f9f9;
+} */
+
+ul li:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+} */
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+#jam {
+  font-size: 6rem;
+}
+#sisaTodo {
+  text-align: right;
+}
